@@ -66,7 +66,7 @@ public class CustomerGateway {
 		return customer;
 	}
 	
-	@PutMapping("/customers/{id}")
+	@PutMapping("/{id}")
 	public Customer updateCustomer(@RequestBody Customer customer) {
 		customer = customerService.saveOrUpdate(customer);
 		return customer;
